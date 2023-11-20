@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="coverflow.css" /> 
+
+    <link rel="stylesheet" href="Mystyle.css" /> 
+
+    <title>Document</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+    
+        td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+    
+        img {
+          max-width: 100%;
+          height: auto;
+          transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+    
+        img.clicked {
+          transform: scale(1.2); /* Scale effect */
+          filter: grayscale(100%); /* Grayscale effect */
+        }
+    
+        img.clicked.blur {
+          filter: blur(4px); /* Blur effect */
+        }
+    
+        img.clicked.rotate {
+          transform: rotate(45deg); /* Rotation effect */
+        }
+      </style>
+</head>
+<body>
+
+    <div class="wrap" id="coverflow1"> 
+
+        <div class="scrollbar"> 
+            <div class="handle"> 
+                <div class="mousearea"></div> 
+            </div> 
+        </div> 
+        
+        <div class="frame coverflow"> 
+            <ul class="clearfix"> 
+                <li>Holder</li> 
+            </ul> 
+        </div> 
+        
+        <ul class="pages"></ul> 
+        
+    </div> 
+    <audio controls autoplay loop>
+        <source src="Akaza_Theme.mp3" type="audio/mp3">
+        
+      </audio>
+        
+    <div> 
+    
+            <div id="nav">
+                <img  id="logo" src="1692529224072.jpg"><br><br><p><br>
+                <p><a href= autobazzar.html>Home</a> | <a href= "aboutus.html">About</a> | <a href= "finddealer.html"> More Categories </a> |
+                </p>
+        </div>
+        <h1> Kevin Muraga Njuguna SCT221-0235/2021</h1>
+
+        <table border ="10">
+            <style>
+                table {
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+              </style>
+         <tr>
+            <td><img src="KEVIN (25).jpeg"></td>
+            <td><img src="KEVIN (15).jpeg"></td>
+            <td><img src= "KEVIN (8).jpeg"></td>
+        </tr> 
+        
+        <tr>
+            <td class="desc"> Attack on Titan starts off as what looks like an ordinary battle shonen with a heavy focus on gore. Things like that can be a lot of fun, but they're not ... </td>
+            <td class="desc"> Death Note is a Japanese manga series written by Tsugumi Ohba and illustrated by Takeshi Obata. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from December 2003 to May 2006, with its chapters collected in 12 tankōbon volumes.</td>
+            <td class="desc">The Holy Empire of Britannia conquered the country known as Japan and now call it Area 11. Its residents lost their rights to self-govern and are now called Elevens. The Empire uses powerfully destructive robotic weapons called Knightmares to ensure control, but someone is about to stand up against it.</td>
+        </tr> 
+        
+        <tr>
+            <td><img src= "KEVIN (3).jpeg"></td>
+            <td><img src= "KEVIN (20).jpeg"></td>
+            <td><img src="KEVIN (12).jpeg"></td>
+        </tr>
+        
+        <tr>
+            <td class="desc"> Steins;Gate keeps all its balls in the air without sacrificing character development, theme, or artistry. It's one of the most popular anime of the last decade, ...</td>
+            <td class="desc">While Monster is a little slow to warm up, the overall story is so engrossing and well-told that by the time you're finished, it won't matter. Buy on Amazon. 6.</td>
+            <td class="desc"> Cowboy Bebop is an original science fiction anime series produced by Sunrise. ... Even more than 20 years after its release, 'Cowboy Bebop' continues to captivate ...</td>
+        </tr>
+ </table>
+ <script>
+    function applyClickEffect(image) {
+      image.classList.toggle("clicked");
+    }
+  </script>
+</div>
+
+    <footer>
+      Muraga anima wallpapers and Comics ltd
+    </footer>
+
+    <script src="jquery.min.js"></script>
+
+    <script src="sly.min.js"></script>
+    <script src="coverflow.js"></script>
+          
+</body>
+</html>
